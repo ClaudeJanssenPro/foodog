@@ -1,0 +1,99 @@
+footer
+    display: grid
+    grid-template-areas: "top" "bottom"
+    grid-template-rows: 1fr min-content
+    grid-auto-columns: 100%
+    grid-gap: get-vw(40px)vw
+    width: 100vw
+    .top
+        grid-area: top
+        background-color: $color__footer-1
+        height: 48.5vh
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center
+        @media screen and (max-width: 768px) and (orientation: portrait)
+            height: 50vh
+        .categories
+            padding: 2vh 1vw
+            font-size: 10px
+            list-style: none
+            color: $color__text-input
+            margin-left: 2vw
+            margin-top: 2vh
+            font-family: $font__main
+            font-weight: bold
+            @media screen and (max-width: 768px) and (orientation: portrait)
+                font-size: 2vh
+                margin-top: 0.2vh
+                margin-left: 3vw
+            @media screen and (max-width: 768px) and (orientation: landscape)
+                font-size: 3vh
+                margin-top: 1vh
+                margin-left: 3vw
+
+            li
+                text-transform: uppercase
+                ul
+                    text-decoration: none
+                    padding-right: 10vw
+                    transform: translateX(-1vw)
+                    .cat-item-3
+                        border: 1px solid $color__footer-1
+                        padding-top: 2vh
+                    li
+                        text-transform: capitalize
+                        padding-top: 2.8vh
+                        padding-bottom: 2vh
+                        border-top: 1px solid #44484D
+                        list-style: none
+                        a
+                            color: white
+                            text-decoration: none
+        .popularPosts
+            width: 30vw
+        .footer_instagram
+            width: 30vw
+            display: grid
+            grid-template-rows: min-content 1fr
+            grid-template-columns: repeat(3, 1fr)
+            .footer_instagram_title
+                grid-row: 1
+                grid-column: 1
+                vertical-align: middle
+                line-height: 30px
+                margin: 0
+                padding: 0 15px 0 0
+                z-index: 10
+            .footer_instagram_gallery
+                grid-row: 2
+                grid-gap: get-vw(8px)vw
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+                img
+                    width: get-vw(110px)vw
+                    height: auto
+        
+    .bottom
+        grid-area: bottom
+        background-color: $color__footer-2
+        height: 15vh
+        @media screen and (max-width: 768px) and (orientation: portrait)
+            height: 5vh
+        .footerSocialLink
+            float: right
+            ul
+                display: flex
+                justify-content: flex-end
+                li
+                    list-style: none
+                    margin-left: 3vw
+                button
+                    background-color: $color__footer-1
+                    color: $color__background-body
+                    border-radius: 100%
+                    border: 1px solid $color__footer-1
+                    padding: 10px
+                    padding-left: get-vw(13px)vw
+                    padding-right: get-vw(13px)vw 

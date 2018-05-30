@@ -1,1 +1,0 @@
-[27-Mar-2018 09:33:00 UTC] WordPress database error Unknown column 'icon' in 'field list' for query select id, icon from wp_maxbuttonsv3 made by activate_plugin, do_action('activate_maxbuttons/maxbuttons.php'), WP_Hook->do_action, WP_Hook->apply_filters, MaxButtons\maxInstall::activation_hook, MaxButtons\maxInstall::activate_plugin, MaxButtons\maxInstall::updateFA
